@@ -1,3 +1,28 @@
-header {
-  border: 2px solid red;
+// Mobile Styles
+.header {
+  font-family: $main-font;
+  color: $main-font-color;
+  text-align: center;
+
+  &__col-1 {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-size: 2.8rem;
+      line-height: 2.5rem;
+    }
+
+    h1, h2 {
+      
+      margin-bottom: 10px;
+    }
+  }
+  
+  .header-col-2 {
+    
+  
+    
+  }
 }
+
