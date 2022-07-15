@@ -17,5 +17,10 @@
       margin-bottom: 10px;
     }
   }
+
+  // Breakpoints
+  @include breakpoint-up(medium) {
+    text-align: left;
+  }
 }
 
