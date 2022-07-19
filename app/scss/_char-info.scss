@@ -20,10 +20,6 @@
     text-align: center;
   }
 
-  &__col-2 p {
-    font-size: 1.5rem;
-  }
-
   &__col-2 h3 {
     font-size: 1rem;
     font-family: $secondary-font;
@@ -53,7 +49,7 @@
 
   &__name {
     @include breakpoint-up(large) {
-      font-size: 3.5rem;
+      font-size: 4vw;
     }
   }
 

@@ -16,6 +16,15 @@ body {
 
 p {
   font-family: "Roboto", sans-serif, Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-family: "Pirata One", cursive;
+}
+
+h1, h2, h3 {
+  color: #7F3300;
 }
 
 .header {
@@ -41,7 +50,7 @@ p {
 }
 
 .char-info__col-1, .char-info__col-2 {
-  border: 4px double gray;
+  border: 4px double #8dabba;
   padding: 10px 15px;
 }
 .char-info__col-1, .char-info__col-2, .char-info__col-2 h3 {
@@ -55,9 +64,6 @@ p {
   font-family: "Caveat", cursive;
   color: rgb(51, 51, 51);
   text-align: center;
-}
-.char-info__col-2 p {
-  font-size: 1.5rem;
 }
 .char-info__col-2 h3 {
   font-size: 1rem;
@@ -84,7 +90,7 @@ p {
 }
 @media (min-width: 64em) {
   .char-info__name {
-    font-size: 3.5rem;
+    font-size: 4vw;
   }
 }
 @media (min-width: 64em) {
@@ -106,5 +112,75 @@ p {
 @media (min-width: 64em) {
   .char-info .info {
     width: 50%;
+  }
+}
+
+.abilities-skills-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.abilities-skills-section h1 {
+  text-align: center;
+  padding-top: 5px;
+}
+
+.abilities {
+  border: 4px double #8dabba;
+  width: 100%;
+}
+.abilities__ability {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.abilities__ability h3 {
+  border: 2px solid #8dabba;
+  border-radius: 8px;
+}
+.abilities__ability h3, .abilities__ability p {
+  padding: 5px 5px;
+}
+.abilities__ability p {
+  font-family: "Caveat", cursive;
+}
+.abilities__ability:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.soft-skills {
+  border: 4px double #8dabba;
+  width: 100%;
+}
+.soft-skills__skill {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}
+.soft-skills__skill p {
+  font-family: "Caveat", cursive;
+  text-align: center;
+  padding: 5px 0;
+  margin: 10px 0;
+  background-color: rgba(141, 171, 186, 0.5);
+  border-radius: 5px;
+  width: 50%;
+}
+.soft-skills__skill p:last-child {
+  margin-left: 5px;
+}
+
+@media (min-width: 40em) {
+  .abilities, .soft-skills {
+    flex: 1;
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 40em) {
+  .soft-skills {
+    flex: 1;
+    margin-left: 15px;
   }
 }/*# sourceMappingURL=style.css.map */

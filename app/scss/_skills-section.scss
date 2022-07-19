@@ -1,0 +1,84 @@
+.abilities-skills-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+
+  h1 {
+    text-align: center;
+    padding-top: 5px;
+  }
+}
+
+// Abilities Column 1
+.abilities {
+  border: $main-border;
+  width: 100%;
+
+  &__ability {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+
+    h3 {
+      border: $secondary-border;
+      border-radius: 8px;
+    }
+
+    h3, p {
+      padding: 5px 5px;
+    }
+
+    p {
+      font-family: $hw-font;
+    }
+  }
+
+  &__ability:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+// Stats Col 2
+// Not sold on including this section. Will revisit if I find a use for it.
+
+// Soft Skills Col 3
+.soft-skills {
+  border: $main-border;
+  width: 100%;
+
+  &__skill {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+
+    p {
+      font-family: $hw-font;
+      text-align: center;
+      padding: 5px 0;
+      margin: 10px 0;
+      background-color: $para-bg-color;
+      border-radius: 5px;
+      width: 50%;
+    }
+
+    p:last-child {
+      margin-left: 5px;
+    }
+  }
+}
+
+// Breakpoints
+.abilities, .soft-skills {
+  @include breakpoint-up(medium) {
+    flex: 1;
+    margin-top: 15px;
+  }
+}
+
+.soft-skills {
+  @include breakpoint-up(medium) {
+    flex: 1;
+    margin-left: 15px;
+  }
+}
