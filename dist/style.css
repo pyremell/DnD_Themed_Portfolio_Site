@@ -54,7 +54,7 @@ h1, h2, h3 {
   padding: 10px 15px;
 }
 .char-info__col-1, .char-info__col-2, .char-info__col-2 h3 {
-  margin-bottom: 1rem;
+  margin-top: 10px;
 }
 .char-info__name {
   font-size: 2.5rem;
@@ -129,6 +129,7 @@ h1, h2, h3 {
 .abilities {
   border: 4px double #8dabba;
   width: 100%;
+  margin-top: 10px;
 }
 .abilities__ability {
   display: flex;
@@ -152,6 +153,7 @@ h1, h2, h3 {
 .soft-skills {
   border: 4px double #8dabba;
   width: 100%;
+  margin-top: 10px;
 }
 .soft-skills__skill {
   display: flex;
@@ -174,7 +176,6 @@ h1, h2, h3 {
 @media (min-width: 40em) {
   .abilities, .soft-skills {
     flex: 1;
-    margin-top: 15px;
   }
 }
 
@@ -182,5 +183,18 @@ h1, h2, h3 {
   .soft-skills {
     flex: 1;
     margin-left: 15px;
+  }
+}
+
+@media (min-width: 64em) {
+  .abilities__ability {
+    flex-direction: row;
+    margin: 0 0 0 50px;
+  }
+  .abilities__ability h3 {
+    width: 120px;
+    height: 100px;
+    text-align: center;
+    padding-top: 50px;
   }
 }/*# sourceMappingURL=style.css.map */
