@@ -14,12 +14,11 @@
 .abilities {
   border: $main-border;
   width: 100%;
-  margin-top: 10px;
 
   &__ability {
     display: flex;
     flex-direction: column;
-    padding: 5px;
+    padding: 5px 5px 20px;
 
     h3 {
       border: $secondary-border;

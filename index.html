@@ -14,9 +14,15 @@
       href="https://fonts.googleapis.com/css2?family=Caveat&family=Pirata+One&display=swap"
       rel="stylesheet"
     />
-    <title>Jacob Schaefer - Web Developer</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+
     <link rel="stylesheet" href="dist/parchment_style.css" />
     <link rel="stylesheet" href="dist/style.css" />
+
+    <title>Jacob Schaefer - Web Developer</title>
   </head>
   <body>
     <main>
@@ -127,6 +133,28 @@
         </section>
 
         <!-- Projects/About 2-col-desktop 1-col-mobile -->
+        <section class="projects-about-section">
+          <!-- Projects Carousel -->
+          <div class="projects-carousel">
+            <h1>Swipe to see my projects</h1>
+            <div
+              class="carousel"
+              data-flickity='{ "imagesLoaded": true, "percentPosition": false }'
+            >
+              <img src="images/Coming-Soon.png" alt="Coming Soon" />
+              <img src="images/Coming-Soon.png" alt="Coming Soon" />
+              <img src="images/Coming-Soon.png" alt="Coming Soon" />
+              <img src="images/Coming-Soon.png" alt="Coming Soon" />
+              <img src="images/Coming-Soon.png" alt="Coming Soon" />
+              <img src="images/Coming-Soon.png" alt="Coming Soon" />
+            </div>
+          </div>
+
+          <!-- About Me & Contact -->
+          <div class="about-contact">
+            
+          </div>
+        </section>
 
         <!-- Projects (Slideshow) -->
 
@@ -149,6 +177,7 @@
       </filter>
     </svg>
 
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="app/js/main.js"></script>
   </body>
 </html>
