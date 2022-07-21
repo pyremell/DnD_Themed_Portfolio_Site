@@ -19,12 +19,13 @@ section {
 }
 
 p {
-  font-family: "Roboto", sans-serif, Arial, Helvetica, sans-serif;
+  font-family: "Caveat", cursive, sans-serif;
   font-size: 1.5rem;
 }
 
 h1 {
   font-family: "Pirata One", cursive;
+  font-size: 1.6rem;
 }
 
 h1, h2, h3 {
@@ -57,26 +58,24 @@ h1, h2, h3 {
   border: 4px double rgba(141, 171, 186, 0.4);
   padding: 10px 15px;
 }
-.char-info__col-1, .char-info__col-2, .char-info__col-2 h3 {
-  margin-top: 15px;
-}
 .char-info__name {
   font-size: 2.5rem;
   font-weight: bolder;
 }
 .char-info__name, .char-info__col-2 p {
-  font-family: "Caveat", cursive;
   color: rgb(51, 51, 51);
   text-align: center;
+}
+.char-info__col-2 p {
+  border-bottom: 2px solid rgba(141, 171, 186, 0.4);
 }
 .char-info__col-2 h3 {
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
   color: rgb(127, 51, 0);
-  border-top: 1px solid gray;
 }
 @media (min-width: 40em) {
-  .char-info__name, .char-info .info p {
+  .char-info .info p {
     text-align: left;
   }
 }
@@ -146,9 +145,6 @@ h1, h2, h3 {
 .abilities__ability h3, .abilities__ability p {
   padding: 5px 5px;
 }
-.abilities__ability p {
-  font-family: "Caveat", cursive;
-}
 .abilities__ability:not(:last-child) {
   margin-bottom: 10px;
 }
@@ -156,7 +152,6 @@ h1, h2, h3 {
 .soft-skills {
   border: 4px double rgba(141, 171, 186, 0.4);
   width: 100%;
-  margin-top: 10px;
 }
 .soft-skills__skill {
   display: flex;
@@ -176,13 +171,13 @@ h1, h2, h3 {
   margin-left: 5px;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 64em) {
   .abilities, .soft-skills {
     flex: 1;
   }
 }
 
-@media (min-width: 40em) {
+@media (min-width: 64em) {
   .soft-skills {
     flex: 1;
     margin-left: 15px;
@@ -203,12 +198,16 @@ h1, h2, h3 {
 }
 
 .projects-about-section {
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .projects-carousel {
   border: 4px double rgba(141, 171, 186, 0.4);
   padding: 10px 10px 35px;
+  width: 100%;
 }
 .projects-carousel h1 {
   text-align: center;
@@ -223,4 +222,29 @@ h1, h2, h3 {
   display: block;
   width: 100%;
   margin-right: 50px;
+}
+
+.about-me {
+  border: 4px double rgba(141, 171, 186, 0.4);
+}
+.about-me h1 {
+  text-align: center;
+  margin-top: 10px;
+}
+.about-me__bio-text {
+  font-family: "Caveat", cursive;
+  padding: 15px;
+}
+
+@media (min-width: 64em) {
+  .projects-carousel, .about-me {
+    flex: 1;
+  }
+}
+
+@media (min-width: 64em) {
+  .about-me {
+    flex: 1;
+    margin-left: 15px;
+  }
 }/*# sourceMappingURL=style.css.map */

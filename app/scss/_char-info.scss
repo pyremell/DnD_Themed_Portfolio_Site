@@ -5,35 +5,32 @@
     padding: 10px 15px;
   }
 
-  &__col-1, &__col-2, &__col-2 h3 {
-    margin-top: 15px;
-  }
-
   &__name {
     font-size: 2.5rem;
     font-weight: bolder;
   }
 
   &__name, &__col-2 p {
-    font-family: $hw-font;
     color: $hw-font-color;
     text-align: center;
+  }
+
+  &__col-2 p {
+    border-bottom: $secondary-border;
   }
 
   &__col-2 h3 {
     font-size: 1rem;
     font-family: $secondary-font;
     color: $main-font-color;
-    border-top: 1px solid gray;
   }
 
   // Breakpoints
-  &__name, .info p {
+  .info p {
     @include breakpoint-up(medium) {
       text-align: left;
+    }
   }
-
-}
 
   @include breakpoint-up(large) {
     display: flex;

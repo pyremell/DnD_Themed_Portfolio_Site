@@ -28,10 +28,6 @@
     h3, p {
       padding: 5px 5px;
     }
-
-    p {
-      font-family: $hw-font;
-    }
   }
 
   &__ability:not(:last-child) {
@@ -46,7 +42,6 @@
 .soft-skills {
   border: $main-border;
   width: 100%;
-  margin-top: 10px;
 
   &__skill {
     display: flex;
@@ -71,15 +66,15 @@
 
 // Breakpoints
 
-// Tablet Styles
+// Desktop Styles
 .abilities, .soft-skills {
-  @include breakpoint-up(medium) {
+  @include breakpoint-up(large) {
     flex: 1;
   }
 }
 
 .soft-skills {
-  @include breakpoint-up(medium) {
+  @include breakpoint-up(large) {
     flex: 1;
     margin-left: 15px;
   }
