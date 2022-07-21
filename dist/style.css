@@ -4,6 +4,8 @@ html {
 }
 
 *::before, *::after {
+  margin: 0;
+  padding: 0;
   box-sizing: inherit;
 }
 
@@ -11,11 +13,21 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  line-height: 1.3;
 }
 
 section {
   margin-bottom: 15px;
+}
+
+.scale-effect {
+  transition: 0.3s ease-in-out;
+}
+
+@media (min-width: 64em) {
+  .scale-effect:hover {
+    background-color: rgba(127, 51, 0, 0.1);
+    transform: scale(1.05);
+  }
 }
 
 p {
@@ -247,4 +259,50 @@ h1, h2, h3 {
     flex: 1;
     margin-left: 15px;
   }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 60px;
+}
+.footer h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.footer__icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.footer__btn {
+  border-radius: 10px;
+  font-family: "Pirata One", cursive;
+  color: #ffffff;
+  font-size: 20px;
+  background: #7f3300;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+  transition: 0.3s ease-in;
+}
+.footer__btn:hover {
+  background: #963cfc;
+}
+.footer__links {
+  margin: 0 auto;
+  padding: 15px;
+}
+.footer__links-link {
+  padding: 5px;
+  color: #7f3300;
+  transition: 0.3s ease-in-out;
+}
+.footer__links-link:hover {
+  color: #963cfc;
+  transform: scale(1.4);
 }/*# sourceMappingURL=style.css.map */

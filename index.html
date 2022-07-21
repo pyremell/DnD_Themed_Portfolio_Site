@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://kit.fontawesome.com/64df01c2ac.js"
+      crossorigin="anonymous"
+    ></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -38,7 +44,7 @@
         </header>
 
         <!-- Character info section - 2-col-desktop 1-col-mobile -->
-        <section class="char-info small-char-info large-char-info">
+        <section class="char-info small-char-info large-char-info scale-effect">
           <section class="char-info__col-1 large-char-info-left">
             <p class="char-info__name">Jacob Schaefer</p>
           </section>
@@ -65,7 +71,7 @@
 
         <!-- Ability Scores -->
         <section class="abilities-skills-section">
-          <section class="abilities abilities-col-1">
+          <section class="abilities abilities-col-1 scale-effect">
             <h1>Abilities</h1>
             <div class="abilities__ability">
               <h3>HTML5</h3>
@@ -111,7 +117,7 @@
           </div> -->
 
           <!-- Soft Skills -->
-          <section class="soft-skills">
+          <section class="soft-skills scale-effect">
             <h1>Soft Skills</h1>
             <div class="soft-skills__skill">
               <p>Customer Service</p>
@@ -135,23 +141,38 @@
         <!-- Projects/About 2-col-desktop 1-col-mobile -->
         <section class="projects-about-section">
           <!-- Projects Carousel -->
-          <section class="projects-carousel">
+          <section class="projects-carousel scale-effect">
             <h1>Swipe to see my projects</h1>
             <div
               class="carousel"
-              data-flickity='{ "imagesLoaded": true, "percentPosition": false }'
+              data-flickity='{  "percentPosition": false, "lazyLoad": 1 }'
             >
-              <img src="images/Coming-Soon.png" alt="Coming Soon" />
-              <img src="images/Coming-Soon.png" alt="Coming Soon" />
-              <img src="images/Coming-Soon.png" alt="Coming Soon" />
-              <img src="images/Coming-Soon.png" alt="Coming Soon" />
-              <img src="images/Coming-Soon.png" alt="Coming Soon" />
+              <img
+                data-flickity-lazyload-src="images/Coming-Soon.png"
+                alt="Coming Soon"
+              />
+              <img
+                data-flickity-lazyload-src="images/Coming-Soon.png"
+                alt="Coming Soon"
+              />
+              <img
+                data-flickity-lazyload-src="images/Coming-Soon.png"
+                alt="Coming Soon"
+              />
+              <img
+                data-flickity-lazyload-src="images/Coming-Soon.png"
+                alt="Coming Soon"
+              />
+              <img
+                data-flickity-lazyload-src="images/Coming-Soon.png"
+                alt="Coming Soon"
+              />
               <img src="images/Coming-Soon.png" alt="Coming Soon" />
             </div>
           </section>
 
           <!-- About Me -->
-          <section class="about-me">
+          <section class="about-me scale-effect">
             <h1>Character Bio</h1>
             <p class="about-me__bio-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -166,9 +187,40 @@
         </section>
 
         <!-- Footer/Social Media/CTA - Full Width -->
-        <section class="footer">
-          <a href="#"><button>Contact Me</button></a>
-        </section>
+        <footer class="footer">
+          <h1>Spells of Summoning and Social Magic</h1>
+          <div class="footer__icons">
+            <a
+              href="mailto:jacobschaefer12@gmail.com?subject=I just cast a Job Offer spell!"
+              ><button class="footer__btn">Cast a Job Offer Spell</button></a
+            >
+            <div class="footer__links">
+              <a
+                class="footer__links-link"
+                href="https://github.com/pyremell"
+                alt="GitHub"
+                target="_blank"
+                ><i class="fa-brands fa-github-square fa-2xl fa-beat"></i
+              ></a>
+
+              <a
+                class="footer__links-link"
+                href="https://www.linkedin.com/in/jacob-schaefer-9477848a/"
+                alt="LinkedIn"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin fa-2xl fa-beat"></i
+              ></a>
+
+              <a
+                class="footer__links-link"
+                href="https://twitter.com/JacobraTheGreat"
+                alt="Twitter"
+                target="_blank"
+                ><i class="fa-brands fa-twitter-square fa-2xl fa-beat"></i
+              ></a>
+            </div>
+          </div>
+        </footer>
       </div>
     </main>
 

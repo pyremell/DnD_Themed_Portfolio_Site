@@ -2,10 +2,9 @@
 ScrollHeight();
 
 // Redraw when viewport is modified
-window.addEventListener('resize', function(event){
+window.addEventListener('resize', function (event) {
   ScrollHeight();
 });
-
 
 function ScrollHeight() {
   var content = document.querySelector('#parchment');

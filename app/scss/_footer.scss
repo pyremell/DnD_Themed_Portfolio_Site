@@ -1,0 +1,52 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 60px;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  &__icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__btn {
+    border-radius: 10px;
+    font-family: $main-font;
+    color: #ffffff;
+    font-size: 20px;
+    background: #7f3300;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    transition: 0.3s ease-in;
+  }
+
+  &__btn:hover {
+    background: #963cfc;
+  }
+
+  &__links {
+    margin: 0 auto;
+    padding: 15px;
+  }
+
+  &__links-link {
+    padding: 5px;
+    color: #7f3300;
+    transition: 0.3s ease-in-out;
+  }
+
+  &__links-link:hover {
+    color: #963cfc;
+    transform: scale(1.4);
+  }
+}
