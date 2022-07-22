@@ -32,6 +32,7 @@
 
   &__btn:hover {
     background: #963cfc;
+    transform: scale(1.2);
   }
 
   &__links {
@@ -40,6 +41,7 @@
   }
 
   &__links-link {
+    display: inline-block;
     padding: 5px;
     color: #7f3300;
     transition: 0.3s ease-in-out;
@@ -47,6 +49,6 @@
 
   &__links-link:hover {
     color: #963cfc;
-    transform: scale(1.4);
+    transform: scale(1.5);
   }
 }

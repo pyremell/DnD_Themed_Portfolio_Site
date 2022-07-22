@@ -18,7 +18,7 @@
   &__ability {
     display: flex;
     flex-direction: column;
-    padding: 5px 5px 20px;
+    padding: 5px 5px 20px 5px;
 
     h3 {
       border: $secondary-border;
@@ -27,6 +27,10 @@
 
     h3, p {
       padding: 5px 5px;
+    }
+
+    h3 i {
+      padding: 0 10px 10px 10px;
     }
   }
 
@@ -92,7 +96,11 @@
       width: 120px;
       height: 100px;
       text-align: center;
-      padding-top: 50px;
+      // padding-top: 50px;
+    }
+
+    &__ability h3 i {
+      padding: 25px;
     }
   }
 }
