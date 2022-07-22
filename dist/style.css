@@ -76,6 +76,16 @@ h1, h2, h3 {
   font-family: "Roboto", sans-serif;
   color: rgb(127, 51, 0);
 }
+.char-info .info a {
+  display: inline-block;
+  padding: 5px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+.char-info .info a:hover {
+  color: #963cfc;
+  transform: scale(1.2);
+}
 @media (min-width: 40em) {
   .char-info .info p {
     text-align: left;

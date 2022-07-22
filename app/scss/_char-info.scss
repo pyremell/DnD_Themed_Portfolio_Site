@@ -25,6 +25,18 @@
     color: $main-font-color;
   }
 
+  .info a {
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+  }
+
+  .info a:hover {
+    color: #963cfc;
+    transform: scale(1.2);
+  }
+
   // Breakpoints
   .info p {
     @include breakpoint-up(medium) {
