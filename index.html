@@ -5,27 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script
-      src="https://kit.fontawesome.com/64df01c2ac.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="dist/parchment_style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Caveat&family=Pirata+One&display=swap"
       rel="stylesheet"
     />
+
     <link
       rel="stylesheet"
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
     />
 
-    <link rel="stylesheet" href="dist/parchment_style.css" />
     <link rel="stylesheet" href="dist/style.css" />
 
     <title>Jacob Schaefer - Web Developer</title>
@@ -33,8 +24,7 @@
   </head>
   <body>
     <main>
-      <div id="parchment"></div>
-      <div id="contain">
+      <div id="container">
         <!-- Header/Banner -->
 
         <header class="header medium-header">
@@ -62,7 +52,11 @@
             </div>
 
             <div class="info">
-              <p><a href="mailto:jacobschaefer12@gmail.com" target="_blank">Email Me</a></p>
+              <p>
+                <a href="mailto:jacobschaefer12@gmail.com" target="_blank"
+                  >Email Me</a
+                >
+              </p>
               <h3>Contact</h3>
             </div>
           </div>
@@ -146,7 +140,7 @@
             <h1>Swipe to see my projects</h1>
             <div
               class="carousel"
-              data-flickity='{  "percentPosition": false, "lazyLoad": 1 }'
+              data-flickity='{  "percentPosition": false, "lazyLoad": 1, "prevNextButtons": false, "wrapAround": true, "autoPlay": true }'
             >
               <img
                 data-flickity-lazyload-src="images/Coming-Soon.png"
@@ -191,8 +185,7 @@
         <footer class="footer">
           <h1>Spells of Summoning and Social Magic</h1>
           <div class="footer__icons">
-            <a
-              href="mailto:jacobschaefer12@gmail.com" target="_blank"
+            <a href="mailto:jacobschaefer12@gmail.com" target="_blank"
               ><button class="footer__btn">Cast a Job Offer Spell</button></a
             >
             <div class="footer__links">
@@ -221,24 +214,29 @@
               ></a>
             </div>
           </div>
+          <p class="footer__attribution">
+            Photo by
+            <a
+              href="https://unsplash.com/@timmossholder?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Tim Mossholder</a
+            >
+            on
+            <a
+              href="https://unsplash.com/photos/6vvIBTvL90A?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Unsplash</a
+            >
+          </p>
         </footer>
       </div>
     </main>
 
-    <svg>
-      <filter id="wavy2">
-        <feturbulence
-          x="0"
-          y="0"
-          baseFrequency="0.02"
-          numOctaves="5"
-          seed="1"
-        ></feturbulence>
-        <feDisplacementMap in="SourceGraphic" scale="20" />
-      </filter>
-    </svg>
+    <script src="app/js/main.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/64df01c2ac.js"
+      crossorigin="anonymous"
+    ></script>
 
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="app/js/main.js"></script>
   </body>
 </html>
