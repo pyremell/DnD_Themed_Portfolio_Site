@@ -1,12 +1,12 @@
 #container {
   position: relative;
-  background-image: url(/images/img-noise-361x370.png);
+  background-image: url('/images/img-noise-361x370.png');
 	width: 75%;
   margin: 40px auto;
 	padding: 3em 0.75em;
   box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75);
 
   @include breakpoint-up(large) {
     padding: 5em;
