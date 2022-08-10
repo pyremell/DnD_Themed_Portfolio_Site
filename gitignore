@@ -1,0 +1,4 @@
+# Don't track files with DOCX extensions #
+##########################################
+*.docx
+*.doc
